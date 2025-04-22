@@ -1,0 +1,60 @@
+.masonry-grid {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    height: 60vh;
+    box-sizing: border-box;
+}
+
+.column-first {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    gap: 16px;
+}
+.column-second{
+    display: flex;
+    width: inherit;
+    flex-direction: column;
+    gap: 16px;
+}
+.column-third{
+    display: flex;
+    width: inherit;
+    flex-direction: column;
+    gap: 16px;
+}
+.column-fourth{
+    display: flex;
+    width: inherit;
+    flex-direction: column;
+    gap: 16px;
+}
+.column-fifth{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.block {
+    height: 100%;
+    background-color: #3498db;
+    color: white;
+    padding: 16px;
+    text-align: center;
+}
+
+.large {
+    flex-grow: 1;
+}
+
+.small {
+    height: 50%;
+}
+
+/* Optional: Add hover effect to the blocks */
+.block:hover {
+    background-color: #2980b9;
+}
