@@ -1,30 +1,42 @@
-.sponsors-container {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-.row {
-    display: flex;
+.sponsors {
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
     text-align: center;
-}
-
-.column {
-    padding: 10px;
-    background-color: red;
-    width: 600px;
-
-    /* Flexbox setup */
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-}
-
-.header {
-    /* Keeps the <h1> at the top */
-    
-}
-
-.column img {
-    align-self: center; /* Horizontally center the image */
-     /* Add some space if needed between header and image */
-}
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: #444;
+  }
+  
+  .sponsor-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    justify-items: center;
+    margin: 1rem 0;
+  }
+  
+  .sponsor-grid.three-cols {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  /* .sponsors-scroll {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .scroll-inner {
+    animation: scrollCredits 60s linear infinite;
+  }
+  
+  @keyframes scrollCredits {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(-100%);
+    }
+  } */
