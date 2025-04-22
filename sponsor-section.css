@@ -1,0 +1,30 @@
+.sponsors-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    text-align: center;
+}
+
+.column {
+    padding: 10px;
+    background-color: red;
+    width: 600px;
+
+    /* Flexbox setup */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.header {
+    /* Keeps the <h1> at the top */
+    
+}
+
+.column img {
+    align-self: center; /* Horizontally center the image */
+     /* Add some space if needed between header and image */
+}
