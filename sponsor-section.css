@@ -18,6 +18,14 @@
     margin: 1rem 0;
   }
   
+  .sponsor-grid.one-cols {
+    grid-template-columns: 1fr;
+  }
+  
+  .sponsor-grid.two-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
   .sponsor-grid.three-cols {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
