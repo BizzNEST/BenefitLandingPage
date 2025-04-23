@@ -1,49 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 .masonry-grid {
     display: flex;
-    justify-content: center;
-    gap: 16px;
+    justify-content: flex-start;
+    /* left-align content */
+    overflow-x: auto;
+    /* enables horizontal scroll */
+    gap: 1rem;
     width: 100%;
     height: 60vh;
     box-sizing: border-box;
+    padding: 1rem;
+    scroll-behavior: smooth;
+    /* smooth glide */
 }
 
-.column-first {
+/* Make each column a fixed size so they scroll horizontally */
+.column-first,
+.column-second,
+.column-third,
+.column-fourth,
+.column-fifth {
     display: flex;
-    width: 30%;
     flex-direction: column;
-    gap: 16px;
-}
-.column-second{
-    display: flex;
-    width: inherit;
-    flex-direction: column;
-    gap: 16px;
-}
-.column-third{
-    display: flex;
-    width: inherit;
-    flex-direction: column;
-    gap: 16px;
-}
-.column-fourth{
-    display: flex;
-    width: inherit;
-    flex-direction: column;
-    gap: 16px;
-}
-.column-fifth{
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
+    min-width: 15.625rem;
+    /* 👈 Key part: force width so it scrolls horizontally */
+    flex-shrink: 0;
+    /* Prevent the column from shrinking */
 }
 
-.block {
-    height: 100%;
-    background-color: #3498db;
-    color: white;
-    padding: 16px;
-    text-align: center;
+/* Optional: .column-fifth can be wider if needed */
+.column-first div {
+    width: 25rem;
+    background-image: url("./images/mason-grid/53db47ff3fcc7831cb47f7b8c0de2cd91cc77931.jpg");
+}
+
+.column-second div:nth-of-type(1) {
+    width: 25rem;
+    object-fit: contain;
+    background-image: url("./images/mason-grid/c7378f3700486376bd80cc920c7e603e10cda8b5.jpg");
+}
+
+.column-second div:nth-of-type(2) {
+    width: 25rem;
+    object-fit: contain;
+    background-image: url("./images/mason-grid/cd38c551d725704aab80da47224deb140737d2ad.jpg");
+}
+
+.column-third div {
+    width: 25rem;
+    background-image: url("./images/mason-grid/d7de0744df65905a80f438d017bf50b533025871.jpg");
+}
+
+.column-fourth div {
+    object-fit: contain;
+    background-image: url("./images/mason-grid/e6d086041f1b3bf780a83788f41fa443b9e2be71.jpg");
+}
+
+.column-fifth div:nth-of-type(1) {
+    object-fit: contain;
+    background-image: url("./images/mason-grid/b05f732431181d7317f8112b1af9876a5643765d.jpg");
+}
+
+.column-fifth div:nth-of-type(2) {
+    width: 25rem;
+    object-fit: contain;
+    background-image: url("./images/mason-grid/da3cf60c22dd7b07550138c4390ed5467cc92be8.jpg");
 }
 
 .large {
@@ -54,7 +78,86 @@
     height: 50%;
 }
 
-/* Optional: Add hover effect to the blocks */
+.block {
+    background-color: #3498db;
+    color: white;
+    height: 100%;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.313rem;
+    border: 0.063rem solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+        box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    transform-origin: center;
+    will-change: transform, box-shadow;
+}
+
 .block:hover {
-    background-color: #2980b9;
+    transform: scale(1.05) translateY(-0.25rem);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.line-break {
+    display: flex;
+    justify-content: center;
+}
+
+.circle {
+    color: #B72F8B;
+    background-color: #B72F8B;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 6.25rem;
+
+}
+.top{
+    margin: 0rem;
+    margin-top: 0.88rem;
+    margin-left: 0.9rem;
+    margin-right: 0.9rem;
+}
+.bottom{
+    margin: 0rem;
+    margin-top: 1.8rem;
+    margin-left: 0.9rem;
+    margin-right: 0.9rem;
+}
+
+.text-frame {
+    text-align: center;
+    color: #B72F8B;
+    width: 80%;
+    border-style: solid;
+    border-color: #B72F8B;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    box-shadow: none;
+    outline: none;
+}
+.text-frame legend {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: 2rem;
+    text-align: center;
+    color: #B72F8B;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.browse-more-bttn{
+    background-color: #B72F8B;
+    color: white;
+    padding-top: 0.6em;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0.6em;
+    border:  none;
+    border-radius: 10px;
+    font-family: "Lato";
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 10px;
 }
