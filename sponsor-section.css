@@ -95,11 +95,12 @@
   
   .scroll-inner {
     animation: scrollCredits 35s linear infinite;
+    min-height: 80vh;
   }
   
   @keyframes scrollCredits {
     from {
-      transform: translateY(30%);
+      transform: translateY(20%);
     }
     to {
       transform: translateY(-100%);
