@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inglesa+Script:opsz,wght@6..72,400&display=swap');
+
 .sponsors {
     padding: 2rem;
+  }
+
+  .sponsor-section-title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Inglesa';
+    font-size: 2.3rem;
+    color: #B72F8B;
   }
     
   .sponsor-grid {
@@ -58,7 +68,6 @@
     .sponsor-grid,
     .sponsor-pair {
       max-width: 100%;
-      margin: 3rem auto;
       gap: 1rem;
     }
 
@@ -68,9 +77,16 @@
         margin: 0rem 1rem;
         gap: 2rem;
     }
+
+    .sponsor-section-title {
+       text-align: center;
+        font-family: 'Inglesa';
+        font-size: 1.1rem;
+        line-height: 1.8;
+      }
   }
   
-  .sponsors-scroll {
+  /* .sponsors-scroll {
     height: 100vh;
     overflow: hidden;
     position: relative;
@@ -87,7 +103,7 @@
     to {
       transform: translateY(-100%);
     }
-  } 
+  }  */
 
   .sponsor-center-div{
     height: 100%;
