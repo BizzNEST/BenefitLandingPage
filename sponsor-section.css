@@ -7,8 +7,9 @@
   .sponsor-section-title {
     display: flex;
     justify-content: center;
+    text-align: center;
     font-family: 'Inglesa';
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     color: #B72F8B;
   }
     
@@ -86,8 +87,8 @@
       }
   }
   
-  /* .sponsors-scroll {
-    height: 100vh;
+  .sponsors-scroll {
+    height: 80vh;
     overflow: hidden;
     position: relative;
   }
@@ -103,7 +104,7 @@
     to {
       transform: translateY(-100%);
     }
-  }  */
+  } 
 
   .sponsor-center-div{
     height: 100%;
