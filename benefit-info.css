@@ -3,8 +3,8 @@
 .benefit-info {
   position: relative;
   display: flex;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   flex-direction: column;
   align-items: center;
   background: linear-gradient(to bottom, #51143E, #B72D8B);
@@ -12,6 +12,9 @@
   overflow: hidden;
   z-index: 0;
   gap: 2rem;
+  @media (max-width: 700px) {
+    padding-top: 6rem;
+  }
 }
 
 .benefit-info::after {
@@ -27,6 +30,9 @@
   background-repeat: no-repeat;
   z-index: 1;
   pointer-events: none;
+  @media (max-width: 500px) {
+    background-image: url('./assets/mobileBackgroundLogo.svg');
+  }
 }
 
 .benefit-info > * {
@@ -61,6 +67,9 @@
     font-weight: 400;
     font-size: 4.5rem;
     line-height: 100%;
+    @media (max-width: 500px) {
+      font-size: 3.5;
+    }
   }
 
   .benefit-text{
@@ -68,11 +77,17 @@
     font-style: italic;
     font-size: 4.5rem;
     margin-top: 1rem;
+    @media (max-width: 500px) {
+      font-size: 4.5rem;
+    }
   }
 
   .nest-text{
     font-size: 4.7rem;
     font-weight: 700;
+    @media (max-width: 500px) {
+      font-size: 3.7
+    }
   }
 
   .golden-logo{
@@ -84,16 +99,40 @@
     background: linear-gradient(to bottom, #51143E, #B72D8B);
   }
 
+  .mobile-break {
+    display: none;
+  }
+  
+  .raised-amount {
+    display: inline;
+  }
+  
+  @media (max-width: 500px) {
+    .mobile-break {
+      display: block;
+    }
+  
+    .raised-amount {
+      display: block;
+      text-align: center;
+    }
+  }
+
   .amount-raised{
     font-family: Futura;
     color: white;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-style: italic;
     font-weight: 600;
+    @media (max-width: 500px) {
+    }
   }
 
   .amount-text{
     font-size: 2.5rem;
+    @media (max-width: 500px) {
+      font-size: 1.5rem;
+    }
   }
 
   .help-us-text{
@@ -102,10 +141,16 @@
     font-weight: 600;
     font-style: italic;
     font-size: 2rem;
+    @media (max-width: 500px) {
+      font-size: 1rem;
+    }
   }
 
   .our-goal-text{
     font-size: 2rem;
+    @media (max-width: 500px) {
+      font-size: 1.35rem;
+    }
   }
 
   .donation-info{
@@ -127,6 +172,11 @@
     background: linear-gradient(180deg, #CE9728 0%, #E5B543 29%, #FCE674 53.5%, #EDC04D 63%, #EEB538 75%, #D19A29 93.75%);
     border-style: none;
     border-radius: 10px;
+    cursor: pointer;
+    @media (max-width: 500px) {
+      width: 12rem;
+      height: 2.5rem;
+    }
   }
 
   .donate-today-text{
@@ -140,6 +190,31 @@
     background: linear-gradient(to bottom, #B72D8B,#51143E);
   }
 
-  .huge-text{
-    font-size: 50rem;
+  .mobile-break {
+    display: none;
+  }
+  
+  @media (max-width: 500px) {
+    .mobile-break {
+      display: block;
+    }
+  }
+
+  /* Video CSS */
+  #pageContent, #videoContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease;
+  }
+  
+  #videoContainer {
+    opacity: 0;
+    pointer-events: none;
+    background-color: black;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 100%;
   }

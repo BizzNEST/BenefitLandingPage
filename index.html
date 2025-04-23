@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inglesa+Script:opsz,wght@6..72,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="benefit-info">
+    <section class="benefit-info" id="pageContent">
         <div class="logo-and-text">
             <img class="golden-logo" src="assets/Vector.svg" alt="golden digital NEST logo"></img>
             <div class="digital-nest-text">
@@ -20,10 +20,18 @@
             </div>
         </div>
         <div class="donation-info">
-            <h3 class="amount-raised">TOGETHER, WE'VE RAISED <span class='amount-text'>$800K</span></h3>
+            <h3 class="amount-raised">
+                TOGETHER, WE'VE<span class="mobile-break"></span> 
+                <span class="raised-amount">RAISED <span class="amount-text">$800K</span></span>
+            </h3>
             <h4 class="help-us-text">HELP US CLOSE THE GAP</h4>
             <h4 class="our-goal-text">$200K TO REACH OUR GOAL</h4>
             <button class="donate-today-button"><p class="donate-today-text">DONATE TODAY</p></button>
         </div>
+    </section>
+    <div id="videoContainer">
+        <iframe id="youtubeVideo" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
