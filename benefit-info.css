@@ -3,14 +3,15 @@
 .benefit-info {
   position: relative;
   display: flex;
-  padding-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   flex-direction: column;
   align-items: center;
   background: linear-gradient(to bottom, #51143E, #B72D8B);
   width: 100%;
-  height: 61rem;
   overflow: hidden;
   z-index: 0;
+  gap: 2rem;
 }
 
 .benefit-info::after {
@@ -37,10 +38,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 0.3rem;
   }
   
   .digital-text,
-  .nest-text, .benefit-text, .amount-text {
+  .nest-text, .benefit-text, .amount-text,
+  .our-goal-text {
     background: linear-gradient(
       180deg,
       #CE9728 0%,
@@ -56,17 +59,20 @@
     -webkit-text-fill-color: transparent;
     font-family: Lato;
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 4.5rem;
     line-height: 100%;
   }
 
   .benefit-text{
     font-family: 'Inglesa Script', cursive;
-   font-style: italic;
+    font-style: italic;
+    font-size: 4.5rem;
+    margin-top: 1rem;
   }
 
   .nest-text{
-    font-size: 3.3rem;
+    font-size: 4.7rem;
+    font-weight: 700;
   }
 
   .golden-logo{
@@ -79,13 +85,61 @@
   }
 
   .amount-raised{
-    font-family: Futura PT;
+    font-family: Futura;
     color: white;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-style: italic;
     font-weight: 600;
   }
 
   .amount-text{
     font-size: 2.5rem;
+  }
+
+  .help-us-text{
+    font-family: Futura;
+    color: white;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 2rem;
+  }
+
+  .our-goal-text{
+    font-size: 2rem;
+  }
+
+  .donation-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .logo-and-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .donate-today-button{
+    width: 14rem;
+    height: 2.9rem;
+    background: linear-gradient(180deg, #CE9728 0%, #E5B543 29%, #FCE674 53.5%, #EDC04D 63%, #EEB538 75%, #D19A29 93.75%);
+    border-style: none;
+    border-radius: 10px;
+  }
+
+  .donate-today-text{
+    font-weight: 700;
+    font-size: 1rem;
+    font-style: normal;
+    color: rgba(81, 20, 62, 1);
+  }
+
+  .thank-you-section{
+    background: linear-gradient(to bottom, #B72D8B,#51143E);
+  }
+
+  .huge-text{
+    font-size: 50rem;
   }
