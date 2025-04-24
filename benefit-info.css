@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inglesa+Script:opsz,wght@6..72,400&display=swap');
+
+.benefit-info {
+  position: relative;
+  display: flex;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom, #51143E, #B72D8B);
+  width: 100%;
+  overflow: hidden;
+  z-index: 0;
+  gap: 2rem;
+    @media (max-width: 700px) {
+    padding-top: 6rem;
+  }
+}
+
+.benefit-info::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/backgroundLogo.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+  pointer-events: none;
+  @media (max-width: 500px) {
+    background-image: url('./assets/mobileBackgroundLogo.svg');
+  }
+}
+
+.benefit-info > * {
+  position: relative;
+  z-index: 2;
+}
+
+  .digital-nest-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+  }
+  
+  .digital-text,
+  .nest-text, .benefit-text, .amount-text,
+  .our-goal-text {
+    background: linear-gradient(
+      180deg,
+      #CE9728 0%,
+      #E5B543 20%,
+      #FFFFFF 40%,
+      #FCE674 50%,
+      #EDC04D 70%,
+      #EEB538 85%,
+      #D19A29 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 4.5rem;
+    line-height: 100%;
+    @media (max-width: 500px) {
+      font-size: 3.5;
+    }
+  }
+
+  .benefit-text{
+    font-family: 'Inglesa Script', cursive;
+    font-style: italic;
+    font-size: 4.5rem;
+    margin-top: 1rem;
+    @media (max-width: 500px) {
+      font-size: 4.5rem;
+    }
+  }
+
+  .nest-text{
+    font-size: 4.7rem;
+    font-weight: 700;
+    @media (max-width: 500px) {
+      font-size: 3.7
+    }
+  }
+
+  .golden-logo{
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+  
+  .stats{
+    background: linear-gradient(to bottom, #51143E, #B72D8B);
+  }
+
+  .mobile-break {
+    display: none;
+  }
+  
+  .raised-amount {
+    display: inline;
+  }
+  
+  @media (max-width: 500px) {
+    .mobile-break {
+      display: block;
+    }
+  
+    .raised-amount {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  .amount-raised{
+    font-family: Futura;
+    color: white;
+    font-size: 1.7rem;
+    font-style: italic;
+    font-weight: 600;
+    @media (max-width: 500px) {
+    }
+  }
+
+  .amount-text{
+    font-size: 2.5rem;
+    @media (max-width: 500px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .help-us-text{
+    font-family: Futura;
+    color: white;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 2rem;
+    @media (max-width: 500px) {
+      font-size: 1rem;
+    }
+  }
+
+  .our-goal-text{
+    font-size: 2rem;
+    @media (max-width: 500px) {
+      font-size: 1.35rem;
+    }
+  }
+
+  .donation-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .logo-and-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .donate-today-button{
+    width: 14rem;
+    height: 2.9rem;
+    background: linear-gradient(180deg, #CE9728 0%, #E5B543 29%, #FCE674 53.5%, #EDC04D 63%, #EEB538 75%, #D19A29 93.75%);
+    border-style: none;
+    border-radius: 10px;
+    cursor: pointer;
+    @media (max-width: 500px) {
+      width: 12rem;
+      height: 2.5rem;
+    }
+  }
+
+  .donate-today-text{
+    font-weight: 700;
+    font-size: 1rem;
+    font-style: normal;
+    color: rgba(81, 20, 62, 1);
+  }
+
+  .thank-you-section{
+    background: linear-gradient(to bottom, #B72D8B,#51143E);
+  }
+
+  .mobile-break {
+    display: none;
+  }
+  
+  @media (max-width: 500px) {
+    .mobile-break {
+      display: block;
+    }
+  }
+
+  /* Video CSS */
+
+  .benefit-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  #videoContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+  }
+  
+  #videoContainer.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  #youtubeVideo {
+    width: 100%;
+    height: 100%;
+  }

@@ -87,18 +87,19 @@
       }
   }
   
-  .sponsors-scroll {
+   .sponsors-scroll {
     height: 80vh;
     overflow: hidden;
     position: relative;
   }
+
   
   .scroll-inner {
     animation: scrollCredits 35s linear infinite;
     min-height: 80vh;
-  }
-  
-  @keyframes scrollCredits {
+  }  
+
+   @keyframes scrollCredits {
     from {
       transform: translateY(20%);
     }
@@ -113,4 +114,8 @@
     align-items: center;
     justify-content: center;
     padding: 1rem 0 1rem 0;
+  }
+
+  .yo {
+    z-index: -1;
   }

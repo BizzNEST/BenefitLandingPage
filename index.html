@@ -4,17 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Benefit Landing Page</title>
-    <link rel="stylesheet" href="sponsor-section.css" />
+    <link rel="stylesheet" href="sponsor-section.css">
+    <link rel="stylesheet" href="benefit-info.css">
+    <link rel="stylesheet" href="global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inglesa+Script:opsz,wght@6..72,400&display=swap" rel="stylesheet">
   </head>
-  <body>
+<body>
+    <section class="benefit-wrapper">
+    <section class="benefit-info" id="pageContent">
+        <div class="logo-and-text">
+            <img class="golden-logo" src="assets/Vector.svg" alt="golden digital NEST logo"></img>
+            <div class="digital-nest-text">
+                <h2 class="digital-text">Digital</h2>
+                <h2 class="nest-text">NEST</h2>
+                <h2 class="benefit-text">Benefit</h2>
+            </div>
+        </div>
+        <div class="donation-info">
+            <h3 class="amount-raised">
+                TOGETHER, WE'VE<span class="mobile-break"></span> 
+                <span class="raised-amount">RAISED <span class="amount-text">$800K</span></span>
+            </h3>
+            <h4 class="help-us-text">HELP US CLOSE THE GAP</h4>
+            <h4 class="our-goal-text">$200K TO REACH OUR GOAL</h4>
+            <button class="donate-today-button"><p class="donate-today-text">DONATE TODAY</p></button>
+        </div>
+    </section>
+    <div id="videoContainer">
+        <iframe id="youtubeVideo" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+</section>
 
     <!-- sponsors section -->
-
+    <section class="sponsors-section">
     <div class="sponsor-section-title">
         <h1> THANK YOU TO OUR GENEROUS CO-CHAIRS & SPONSORS </h1>
     </div>
     
-    <section class="sponsors-scroll">
+    <div class="sponsors-scroll">
         <div class="scroll-inner">      
             
             <div class="sponsor-pair">
@@ -33,7 +60,6 @@
               </div>
             </div>
             
-
             <div class="sponsor-grid one-cols">
                 <img src="images/Supporter Sponsors.png" alt="" loading="lazy">
             </div>
@@ -120,10 +146,10 @@
             <div class="sponsor-grid one-cols">
                 <img src="images/Frame 128.png" alt="" loading="lazy"/>
             </div>
-          </section>
+          </div>
         </div>
     </section>
-
       <!-- end of sponsor section -->
+    <script src="app.js"></script>
   </body>
 </html>
