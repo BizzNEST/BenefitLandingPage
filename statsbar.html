@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="statsbar.css" />
+  <title>Statsbar Animation</title>
+</head>
+<body>
+
+  <div class="main-container">
+
+    <!-- Top Horizontal Line -->
+    <div class="topHorizontalLine">
+      <object class="svg-line" type="image/svg+xml" data="./assets/topHorizontalLine.svg"></object>
+    </div>
+
+    <!-- Circle + Text initially centered -->
+    <div id="circleWrapper" class="circle-wrapper center">
+      <div id="animation" class="animation-container"></div>
+      <div class="circle-text">$1MIL</div>
+    </div>
+
+    <!-- Paragraph text (hidden initially) -->
+    <div id="textBlock" class="text-container hidden">
+      <p>Thanks to your support,</p>
+      <p>
+        our <span class="highlight">10-Year Benefit</span> was a huge success<br/>
+        raising <span class="highlight">$800,000</span> to support youth access<br/>
+        to tech careers.
+      </p>
+      <p>
+        Your donation helps us create opportunity for<br/>
+        thousands more young people across California.
+      </p>
+    </div>
+
+    <!-- Bottom Horizontal Line -->
+    <div class="bottomHorizontalLine">
+      <object class="svg-line" type="image/svg+xml" data="./assets/bottomHorizontalLine.svg"></object>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+      // Animation Delay
+      setTimeout(() => {
+        document.getElementById("circleWrapper").classList.remove("center");
+        document.getElementById("circleWrapper").classList.add("slide-right");
+      }, 2000);
+
+      setTimeout(() => {
+        document.getElementById("textBlock").classList.remove("hidden");
+      }, 3000);
+    </script>
+
+  </div>
+</body>
+</html>
