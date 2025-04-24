@@ -12,7 +12,7 @@
   overflow: hidden;
   z-index: 0;
   gap: 2rem;
-  @media (max-width: 700px) {
+    @media (max-width: 700px) {
     padding-top: 6rem;
   }
 }
@@ -201,20 +201,32 @@
   }
 
   /* Video CSS */
-  #pageContent, #videoContainer {
-    position: absolute;
+
+  .benefit-wrapper {
+    position: relative;
     width: 100%;
-    height: 100%;
-    transition: opacity 1s ease;
+    height: auto;
   }
   
   #videoContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 10;
     opacity: 0;
     pointer-events: none;
-    background-color: black;
+    transition: opacity 0.5s ease;
   }
   
-  iframe {
+  #videoContainer.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  #youtubeVideo {
     width: 100%;
     height: 100%;
   }

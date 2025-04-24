@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inglesa+Script:opsz,wght@6..72,400&display=swap');
+
+.sponsors {
+    padding: 2rem;
+  }
+
+  .sponsor-section-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Inglesa';
+    font-size: 1.3rem;
+    color: #B72F8B;
+  }
+    
+  .sponsor-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 3rem auto;
+    display: grid;
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .sponsor-grid.one-cols {
+    grid-template-columns: 1fr;
+  }
+  
+  .sponsor-grid.two-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sponsor-grid.three-cols {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .sponsor-pair {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding-top: 2rem;
+  }
+
+  .sponsor-con {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* media query */
+  @media (max-width: 768px) {
+    .sponsor-grid.one-cols,
+    .sponsor-grid.two-cols,
+    .sponsor-grid.three-cols {
+      grid-template-columns: 1fr;
+    }
+
+    .sponsor-pair {
+        flex-direction: column;
+      }
+
+    .sponsor-grid img,
+    .sponsor-pair img,
+    .sponsor-pair-title img {
+        max-width: 20rem;
+        max-height: 8rem;
+      }
+  
+    .sponsor-grid,
+    .sponsor-pair {
+      max-width: 100%;
+      gap: 1rem;
+    }
+
+    .sponsor-con {
+        display: flex;
+        align-items: center;
+        margin: 0rem 1rem;
+        gap: 2rem;
+    }
+
+    .sponsor-section-title {
+       text-align: center;
+        font-family: 'Inglesa';
+        font-size: 0.9rem;
+        line-height: 1.8;
+      }
+  }
+  
+   .sponsors-scroll {
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+  
+  .scroll-inner {
+    animation: scrollCredits 35s linear infinite;
+    min-height: 80vh;
+  }  
+
+   @keyframes scrollCredits {
+    from {
+      transform: translateY(20%);
+    }
+    to {
+      transform: translateY(-100%);
+    }
+  } 
+
+  .sponsor-center-div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0 1rem 0;
+  }
+
+  .yo {
+    z-index: -1;
+  }
