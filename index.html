@@ -6,6 +6,7 @@
     <title>Benefit Landing Page</title>
     <link rel="stylesheet" href="sponsor-section.css">
     <link rel="stylesheet" href="benefit-info.css">
+    <link rel="stylesheet" href="statsbar.css" />
     <link rel="stylesheet" href="global.css">
     <link href="https://fonts.googleapis.com/css2?family=Inglesa+Script:opsz,wght@6..72,400&display=swap" rel="stylesheet">
   </head>
@@ -37,6 +38,54 @@
     </div>
 </section>
 <!-- End of Hero Banner Section-->
+
+<!-- Start of Statbar Section -->
+<section class="statsbar-section">
+    <div class="topHorizontalLine">
+      <object class="svg-line" type="image/svg+xml" data="./assets/topHorizontalLine.svg"></object>
+    </div>
+  
+    <div class="statsbar-content">
+      <!-- Text: initially hidden -->
+      <div id="textBlock" class="text-container hidden">
+        <p>Thanks to your support,</p>
+        <p>
+          our <span class="highlight">10-Year Benefit</span> was a huge success<br/>
+          raising <span class="highlight">$800,000</span> to support youth access<br/>
+          to tech careers.
+        </p>
+        <p>
+          Your donation helps us create opportunity for<br/>
+          thousands more young people across California.
+        </p>
+      </div>
+  
+      <!-- Circle: starts shifted left, then slides right -->
+      <div id="circleWrapper" class="circle-wrapper">
+        <div id="animation" class="animation-container"></div>
+        <div class="circle-text">$1MIL</div>
+      </div>
+    </div>
+  
+    <div class="bottomHorizontalLine">
+      <object class="svg-line" type="image/svg+xml" data="./assets/bottomHorizontalLine.svg"></object>
+    </div>
+  </section>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
+  <script src="script.js"></script>
+  
+  <script>
+    setTimeout(() => {
+      document.getElementById("circleWrapper").classList.add("slide-right");
+    }, 2000);
+  
+    setTimeout(() => {
+      document.getElementById("textBlock").classList.remove("hidden");
+    }, 2100);
+  </script>  
+  
+<!-- End of Stats Bar Section-->  
 
     <!-- sponsors section -->
     <section class="sponsors-section">
