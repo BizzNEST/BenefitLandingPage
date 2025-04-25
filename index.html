@@ -7,9 +7,14 @@
     <title>Benefit Landing Page</title>
     <link rel="stylesheet" href="sponsor-section.css">
     <link rel="stylesheet" href="mason-grid-section.css">
+    <link href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    " rel="stylesheet">
 </head>
 
 <body>
+
+
     <div class="line-break">
         <div class="circle top"></div>
         <fieldset class="text-frame">
@@ -17,25 +22,41 @@
         </fieldset>
         <div class="circle top"></div>
     </div>
-    <div class="masonry-grid">
-        <div class="column-first">
-            <div class="block large"></div>
+
+    <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <div class="column-first">
+                        <div class="block large"></div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="column-second">
+                        <div class="block small"></div>
+                        <div class="block small"></div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="column-third">
+                        <div class="block large"></div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="column-fourth">
+                        <div class="block large"></div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="column-fifth">
+                        <div class="block"></div>
+                        <div class="block"></div>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <div class="column-second">
-            <div class="block small"></div>
-            <div class="block small"></div>
-        </div>
-        <div class="column-third">
-            <div class="block large"></div>
-        </div>
-        <div class="column-fourth">
-            <div class="block large"></div>
-        </div>
-        <div class="column-fifth">
-            <div class="block"></div>
-            <div class="block"></div>
-        </div>
-    </div>
+    </section>
+
     <div class="line-break">
         <div class="circle bottom"></div>
         <fieldset class="text-frame">
@@ -44,5 +65,25 @@
         <div class="circle bottom"></div>
     </div>x
 </body>
+
+<script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const splide = new Splide(".splide",{
+            autoWidth:true,
+            gap:16,
+            type   : 'loop',
+            autoplay: true,
+            interval: 1000, // 3 seconds
+            pauseOnHover: true,
+            pauseOnFocus: true,
+            drag:true,
+        }).mount();
+
+    })
+</script>
 
 </html>
