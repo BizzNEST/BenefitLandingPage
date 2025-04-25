@@ -1,8 +1,7 @@
-// script.js
 lottie.loadAnimation({
-    container: document.getElementById('animation'), // the DOM element
+    container: document.getElementById('animation'), 
     renderer: 'svg',
     loop: false,
     autoplay: true,
-    path: 'lotti.json' // path to your animation JSON
+    path: 'lotti.json'
 });
