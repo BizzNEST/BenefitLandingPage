@@ -112,6 +112,18 @@
   padding-right: 1rem;
 }
 
+.donation-top {
+        margin: 0rem;
+        margin-top: 0.88rem;
+        margin-left: 0.9rem;
+        margin-right: 0.9rem;
+    }
+    .donation-bottom{
+        margin: 0rem;
+        margin-top: 1.2rem;
+        margin-left: 0.9rem;
+        margin-right: 0.9rem;
+    }
 @media only screen and (max-width: 48rem) {
   .circle {
     visibility: hidden;
