@@ -89,8 +89,8 @@
 }
 
 .donation-circle {
-    color: #B72F8B;
-    background-color: #B72F8B;
+    color: #CE9728;
+    background-color: #CE9728;
     width: 0.5em;
     height: 0.5em;
     border-radius: 6.25rem;
@@ -99,10 +99,10 @@
 
 .donation-text-frame {
     text-align: center;
-    color: #B72F8B;
+    color: #CE9728;
     width: 80%;
     border-style: solid;
-    border-color: #B72F8B;
+    border-color: #CE9728;
     border-left: none;
     border-right: none;
     border-bottom: none;
@@ -114,10 +114,11 @@
     font-weight: 800;
     font-size: 2rem;
     text-align: center;
-    color: #B72F8B;
+    color: #CE9728;
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
 
 @media only screen and (max-width: 48rem) {
     .circle {
