@@ -69,6 +69,11 @@
   font-style: italic;
 }
 
+.dono-nest-logo img {
+    width: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
 .donation-line-break:first-of-type {
   padding-top: 3rem;
   padding-bottom: 8rem;
@@ -102,30 +107,62 @@
   box-shadow: none;
   outline: none;
 }
-.donation-text-frame legend {
+
+.donation-top-legend {
   font-family: "Times New Roman", Times, serif;
   font-weight: 800;
   font-size: 2rem;
   text-align: center;
-  color: #ce9728;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: linear-gradient(
+    180deg,
+    #ce9728 0%,
+    #e5b543 20%,
+    #ffffff 40%,
+    #fce674 50%,
+    #edc04d 70%,
+    #eeb538 85%,
+    #d19a29 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.donation-bottom-legend {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 .donation-top {
-        margin: 0rem;
-        margin-top: 0.88rem;
-        margin-left: 0.9rem;
-        margin-right: 0.9rem;
-    }
-    .donation-bottom{
-        margin: 0rem;
-        margin-top: 1.2rem;
-        margin-left: 0.9rem;
-        margin-right: 0.9rem;
-    }
+  margin: 0rem;
+  margin-top: 0.88rem;
+  margin-left: 0.9rem;
+  margin-right: 0.9rem;
+}
+.donation-bottom {
+  margin: 0rem;
+  margin-top: 1.2rem;
+  margin-left: 0.9rem;
+  margin-right: 0.9rem;
+}
+
 @media only screen and (max-width: 48rem) {
-  .circle {
+  .donation-circle {
     visibility: hidden;
+  }
+
+  .donation-highlight {
+    font-size: 1.6rem;
+  }
+
+  .donation-text p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+  .dono-nest-logo img {
+    width: 1.2rem;
+    margin-bottom: .5rem;
   }
 }
